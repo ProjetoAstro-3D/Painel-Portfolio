@@ -8,21 +8,67 @@
 </head>
 <body>
     <header>
-        <div>
-            <p>IMPRESSORA 3D</p>
-            <p>NOVIDADES</p>
+        <div class="header-menu-1">
+            <p onclick="trocar('IMPRESSORA 3D', this)">IMPRESSORA 3D</p>
+            <p onclick="trocar('NOVIDADES', this)">NOVIDADES</p>
         </div>
-        <div>
-            <p>PRODUTOS</p>
-            <p>EVENTOS</p>
-            <p>EQUIPE</p>
-            <p>CONTATOS</p>
+        <div class="header-menu-2">
+            <p onclick="trocar('PRODUTOS', this)">PRODUTOS</p>
+            <p onclick="trocar('EVENTOS', this)">EVENTOS</p>
+            <p onclick="trocar('EQUIPE', this)">EQUIPE</p>
+            <p onclick="trocar('CONTATOS', this)">CONTATOS</p>
         </div>
     </header>
-    <main>
-        <div></div>
-        <div class="teste"></div>
-        <div class="teste"></div>
-    </main>
+    
+    <section id="IMPRESSORA 3D">
+        <h1 class="paragrafo-texto-impressora3d-h1">IMPRESSORA 3D</h1>
+        <div class="paragrafo-texto-impressora3d">
+            <p>
+                A impressora 3D é uma tecnologia que, por meio de filamentos, consegue fabricar objetos tridimensionais. Esse processo é chamado de fabricação aditiva, pois o modelo 3D é criado camada por camada usando o material escolhido.
+            </p>
+
+            <p>
+                As primeiras impressoras 3D apareceram em 1984, na Califórnia, usando a estereolitografia, que é considerada a primeira tecnologia de impressão 3D. Ela foi criada por Chuck Hull, engenheiro físico norte-americano, que tinha dois objetivos principais: desenvolver uma forma mais rápida de criar objetos e permitir que materiais líquidos endurecessem quando expostos à luz ultravioleta.
+            </p>
+
+            <p>
+                Foi assim que surgiu o primeiro objeto impresso em 3D, feito com resina fotossensível.
+            </p>
+
+            <p>
+                Hoje, as impressoras 3D contam com vários métodos de fabricação e evoluíram bastante em relação aos primeiros modelos, que levavam semanas para produzir um único objeto. Atualmente existem impressoras acessíveis ao público que conseguem imprimir muito mais rápido, chegando a funcionar dezenas de vezes mais rápido que as primeiras versões.
+            </p>
+
+            <p>
+                Entre as tecnologias mais comuns está a modelagem por deposição fundida (FDM), amplamente disponível comercialmente e reproduzida pelo público geral, principalmente por ser acessível e simples de montar ou ajustar.
+            </p>
+
+            <p>
+                Esse tipo de impressora é muito utilizado para protótipos e peças funcionais. Os filamentos mais usados incluem PLA (Ácido Polilático), PETG, ABS e TPU (Poliuretano Termoplástico).
+            </p>
+        </div>
+    </section>
+
+    <section id="NOVIDADES" style="display:none;">
+        <h1>NOVIDADES</h1>
+    </section>
+
+    <section id="PRODUTOS" style="display:none;">
+        <h1>PRODUTOS</h1>
+    </section>
+
+    <section id="EVENTOS" style="display:none;">
+        <h1>EVENTOS</h1>
+    </section>
+
+    <section id="EQUIPE" style="display:none;">
+        <h1>EQUIPE</h1>
+    </section>
+
+    <section id="CONTATOS" style="display:none;">
+        <h1>CONTATOS</h1>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
