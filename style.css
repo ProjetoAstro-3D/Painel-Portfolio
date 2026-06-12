@@ -1,3 +1,5 @@
+
+
 html{
   background-color: #121212;
   color: white;
@@ -105,3 +107,87 @@ header{
     }
 }
 
+@media screen and (max-width: 768px) {
+  .header-menu-1 p{
+        font-size: 0.3rem;
+  margin-right: 10px;
+  transition: transform 1s ease,
+              color 0.3s ease,
+              margin-left 1s ease,
+              margin-right 1s ease;
+}
+
+  .header-menu-2 p{
+      font-size: 0.3rem;
+    margin-left: 10px;
+    transition: transform 1s ease,
+                color 0.3s ease,
+                margin-left 1s ease,
+                margin-right 1s ease;
+}
+
+  .header-menu-1 p:hover,
+  .header-menu-1 p.ativo{
+    transform: scale(1.5);
+    color: #8eff38;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.header-menu-2 p:hover,
+.header-menu-2 p.ativo{
+  transform: scale(1.3);
+  color: #8eff38;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.paragrafo-texto-impressora3d{
+    font-size:0.8rem;
+    margin-bottom: 10vh;
+  text-align: justify;
+  margin-left: 10px;
+  height: auto;
+  width: 60%;
+  padding-bottom: 100px;
+}
+
+.paragrafo-texto-impressora3d-h1{
+  text-align: justify;
+  margin-left: 10px;
+  margin-bottom:50px;
+  height: auto;
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+.paragrafo-texto-impressora3d p{
+  animation: mover linear both;
+  animation-timeline: view();
+  animation-range: entry 0% exit 100%;
+  line-height: 1.6;
+  letter-spacing: 0.1em; 
+}
+
+
+@keyframes mover{
+    from{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    30%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    70%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+}
+}
